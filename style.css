@@ -1,0 +1,172 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-title: #000000;
+    --color-title-highlight: #89C5CC;
+    --color-text: #7D7987;
+    --color-text-navbar: #1F1534;
+    --color-text-button: #F9F9F9;
+    --color-button: #69B99D;
+    --color-footer: #000000;
+    --font-text-primary: 'Mulish', sans-serif;
+    --font-text-secondary: 'Open Sans', sans-serif;
+    --font-text-button: 'DM Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    font-weight: 400;
+    font-family: var(--font-text-primary);
+    font-size: 14px;
+}
+
+body .dots{
+    width: 98.39px;
+    height: 88px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.content-header{
+    margin-top: 65px;
+    width: 80%;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    gap: 635px;
+}
+
+.logo img {
+    width: 103px;
+    height: 22px;
+}
+
+.navbar{
+    width: 267px;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.navbar a{
+    color: var(--color-text-navbar);
+    text-decoration: none;
+    size: 18px;
+    font-weight: 400;
+}
+
+.navbar a:hover {
+    font-weight: 700;
+}
+
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-section {
+    margin-top: 119px;
+    margin-bottom: 80px;
+    width: 1008px;
+    display: flex;
+    gap: 102px;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 489px;
+}
+
+.text h1{
+    font-weight: 400;
+    font-size: 49px;
+    color: var(--color-title);
+}
+
+.text p{
+    color: var(--color-text);
+    width: 438px;
+}
+
+span {
+    font-weight: 700;
+}
+
+.text h1 span {
+    color: var(--color-title-highlight);
+}
+
+
+button{
+    width: 179px;
+    height: 56px;
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button a{
+    text-decoration: none;
+    font-family: var(--font-text-button);
+    color: var(--color-text-button);
+}
+
+button img{
+    width: 24px;
+    height: 24px;
+}
+
+.image img{
+    width: 417px;
+    height: 433.64px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.content-footer{
+    margin-bottom: 30px;
+}
+
+.text-footer{
+    width: 592px;
+    height: 28px;
+    text-align: center;
+
+}
+
+.text-footer p{
+    color: var(--color-footer);
+    font-family: var(--font-text-secondary);
+}
+
