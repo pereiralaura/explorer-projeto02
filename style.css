@@ -1,141 +1,119 @@
-* {
+:root{
+    --color-title-highlight: #89C5CC;
+    --color-text: #7D7987;
+    --color-text-secondary-and-title: #1F1534;
+    --color-text-button: #F9F9F9;
+    --color-button: #69B99D;
+    --font-text-primary: 'Mulish', sans-serif;
+    --font-text-secondary: 'Open Sans', sans-serif;
+}
+
+body {
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-text-secondary);
+
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+    min-height: 100vh;
 }
 
-:root{
-    --color-title: #000000;
-    --color-title-highlight: #89C5CC;
-    --color-text: #7D7987;
-    --color-text-navbar: #1F1534;
-    --color-text-button: #F9F9F9;
-    --color-button: #69B99D;
-    --color-footer: #000000;
-    --font-text-primary: 'Mulish', sans-serif;
-    --font-text-secondary: 'Open Sans', sans-serif;
-    --font-text-button: 'DM Sans', sans-serif;
+.page {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 65px;
 }
 
-body{
-    height: 100vh;
-    font-weight: 400;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 55px;
     font-family: var(--font-text-primary);
-    font-size: 14px;
 }
 
-body .dots{
-    width: 98.39px;
-    height: 88px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.container{
+ul{
     display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.content-header{
-    margin-top: 65px;
-    width: 80%;
-    height: 25px;
-
-    display: flex;
-    justify-content: center;
-    gap: 635px;
-}
-
-.logo img {
-    width: 103px;
-    height: 22px;
-}
-
-.navbar{
-    width: 267px;
-    display: flex;
-    justify-content: center;
     gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar a{
-    color: var(--color-text-navbar);
+a{
+    color: var(--color-text-secondary-and-title);
     text-decoration: none;
-    size: 18px;
-    font-weight: 400;
 }
 
-.navbar a:hover {
+ul li a{
+    opacity: 0.5;
+}
+
+ul li a:hover{
     font-weight: 700;
+    opacity: 1;
 }
 
-section{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+h1, ul{
+    font-family: var(--font-text-primary);
 }
 
-.content-section {
-    margin-top: 119px;
-    margin-bottom: 80px;
-    width: 1008px;
+main{
     display: flex;
-    gap: 102px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.section1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
+main img{
+    width: 417px;
+    height: 434px;
 }
 
-.text{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 489px;
-}
-
-.text h1{
-    font-weight: 400;
+h1{
     font-size: 49px;
-    color: var(--color-title);
+    line-height: 56px;
+    color: var(--color-text-secondary-and-title);
+    font-weight: 400;
+
+    width: 490px;
 }
 
-.text p{
-    color: var(--color-text);
-    width: 438px;
-}
-
-span {
+h1 span {
+    color: var(--color-title-highlight);
     font-weight: 700;
 }
 
-.text h1 span {
-    color: var(--color-title-highlight);
+section p {
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--color-text);
+    
+    margin: 40px 0;
 }
 
+button {
+    color: var(--color-text-button);
+    text-transform: uppercase;
+    font-family: var(--font-text-secondary);
 
-button{
-    width: 179px;
-    height: 56px;
     background-color: var(--color-button);
     border: none;
     border-radius: 4px;
+
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+
+    padding: 14px 32px 15px;
+
+    cursor: pointer;
 }
 
-button a{
-    text-decoration: none;
-    font-family: var(--font-text-button);
-    color: var(--color-text-button);
+button:hover{
+    background-color: #4ea788;
 }
 
 button img{
@@ -143,30 +121,21 @@ button img{
     height: 24px;
 }
 
-.image img{
-    width: 417px;
-    height: 433.64px;
-}
-
 footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    font-size: 14px;
+    line-height: 28px;
 
-.content-footer{
-    margin-bottom: 30px;
-}
-
-.text-footer{
-    width: 592px;
-    height: 28px;
     text-align: center;
 
+    margin-top: 70px;
 }
 
-.text-footer p{
-    color: var(--color-footer);
-    font-family: var(--font-text-secondary);
+footer a{
+    font-weight: 700;
 }
 
+#balls{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
